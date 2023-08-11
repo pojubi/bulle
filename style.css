@@ -1,0 +1,507 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #f5f5f5;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+#logo-wrapper {
+  position: absolute;
+  top: 0;
+  margin-top: -45px;
+  margin-left: -15px;
+}
+
+#logo-wrapper > img {
+  width: 200px;
+  height: 200px;
+}
+
+header {
+  margin-top: -18px;
+  color: #224bc7;
+  font-size: 15px;
+  text-align: center;
+}
+
+#menuWrapper {
+  /* display: inline-flex;*/
+  justify-content: space-evenly;
+  display: none;
+  list-style: none;
+  background-color: #224bc7;
+  padding: 10px;
+  margin-top: 70px;
+  width: 100%;
+}
+
+#menuWrapper > li {
+  margin: 15px;
+}
+
+#menuWrapper > li > a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+#barIcon {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+#barIcon > i {
+  font-size: 50px;
+  color: #224bc7;
+}
+
+.card {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.items-wrapper {
+  /*max-width: 600px;*/
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px;
+  justify-content: center;
+  align-content: center;
+}
+
+.item {
+  margin: 1px;
+}
+
+.item > img {
+  width: 285px;
+  height: 285px;
+}
+
+
+
+.btn {
+  background-color: #224bc7;
+  font-size: 20px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+.btn > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #224bc7;
+  color: #fafafa;
+  padding: 10px;
+}
+
+/* admin page css */
+#containerAdmin {
+  overflow: hidden;
+}
+
+#headerAdmin {
+  margin-bottom: 100px;
+}
+
+nav > a {
+
+
+}
+
+#mainAdmin {
+  text-align: center;
+}
+
+#mainAdmin > nav {
+}
+
+#menuWrapperAdmin {
+  width: 100%;
+  display: none;
+  background-color:#224bc7;
+  text-align: center;
+  list-style: none;
+  padding: 15px;
+}
+
+
+
+#menuWrapperAdmin > li {
+  margin-top: 20px;
+}
+
+#menuWrapperAdmin > li > a {
+  color: #fafafa;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#subMenuPost {
+  display: none;
+}
+
+
+#mainAdminLogin {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#loginForm {
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+#dashboard {
+  text-align: center;
+}
+
+#postForm {
+  display: none;
+}
+
+#categoryForm {
+  display: none;
+}
+
+#editor {
+  background-color:#ffffff;
+}
+
+#table {
+  background-color: #ffffff;
+}
+
+#adminForm {
+  display: none;
+}
+
+
+
+
+
+#inbox {
+  display: none;
+}
+
+
+#reservations {
+  display: none;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+
+
+.cardAdmin {
+}
+
+.itemAdmin > img {
+  width: 120px;
+  height: 120px;
+  margin: 50px;
+}
+
+.items-wrapperAdmin {
+
+}
+
+
+button {
+  background-color: #224bc7;
+  color: #fafafa;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#editor > button > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+form {
+  display: block;
+  margin: 40px;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+input[type=text] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #224bc7;
+}
+
+input[type=password] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #224bc7;
+}
+
+input[type=file] {
+  color: #224bc7;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+input [type=email] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #224bc7;
+}
+
+input[type=tel] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #224bc7;
+}
+
+#cancel, #cancel2, #cancel3 {
+  display: none;
+  margin: auto;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+  #barIcon {
+    display: none;
+  }
+
+  #menuWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+    background-color: #224bc7;
+    padding: 20px;
+    margin-top: 70px;
+  }
+
+
+  #menuWrapper > li {
+    margin: auto;
+  }
+
+
+
+
+  #menuWrapper > li > a {
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+
+
+  .card {
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .items-wrapper {
+    /*max-width: 600px;*/
+    /* has to be general */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .item {
+    margin: 10px;
+  }
+
+  .item > img {
+    width: 400px;
+    height: 400px;
+  }
+
+
+
+  .btn {
+    background-color: #224bc7;
+    font-size: 22px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fafafa;
+    border-radius: 5px;
+  }
+
+  /* admin page css */
+#containerAdmin {
+  overflow: hidden;
+}
+
+#headerAdmin {
+  margin-bottom: 100px;
+}
+
+#mainAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+}
+
+
+
+#mainAdmin > nav {
+  margin: 0;
+  max-width: 40%;
+  text-align: center;
+}
+
+#menuWrapperAdmin {
+  width: 100%;
+  display: block;
+  background-color:#224bc7;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+}
+
+.items-wrapperAdmin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+#dashboard {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+#inbox {
+  width: 60%;
+  margin: auto;
+}
+
+
+
+
+#reservations {
+  width: 60%;
+}
+
+
+#menuWrapperAdmin > li {
+  margin-top: 40px;
+}
+
+#menuWrapperAdmin > li > a {
+  color: #fafafa;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+#editor {
+  background-color:#ffffff;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: #224bc7;
+  color: #fafafa;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#editor > button > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+form {
+  display: block;
+  margin: 40px;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+input[type=text] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #224bc7;
+}
+
+input[type=password] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #224bc7;
+}
+
+input[type=file] {
+  color: #224bc7;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#cancel {
+  display: none;
+  margin: auto;
+}
+}
