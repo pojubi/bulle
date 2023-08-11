@@ -12,9 +12,8 @@
  */
 
 
- // testing this shit
 
- class Posted {
+class Posted {
   public $arr = [];
 
 
@@ -681,10 +680,7 @@ class Login extends Admin {
     $verify = password_verify($pwd1, $pwd2);
     return $verify;
 
-
-// public function done() {
-
-}
+  }
 
 
 }
